@@ -1,0 +1,286 @@
+@import './title';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Noticia Text', serif;
+  background:red;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+}
+
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  color: rgb(32, 3, 44);
+  margin-bottom: 20px;
+}
+
+h1::after {
+  content:'8';
+  margin-left: 15px;
+}
+
+h1::before {
+  content: '8';
+  margin-right: 15px;
+}
+
+.island__item {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+.form-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.island__item_secondory {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+.island__input {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+}
+
+.island__input::placeholder {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.521);
+  font-style: italic;
+  font-family: 'Noticia Text', serif;
+  padding-left: 10px;
+}
+
+.form-select {
+  background-color: rgba(241, 99, 177, 0.1);
+  width: 25%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(73, 6, 90);
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
+  padding-left: 5px;
+  color: grey;
+}
+
+.input_estimate {
+  background-color: rgba(241, 99, 177, 0.1);
+  width: 25%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(73, 6, 90);
+}
+
+.input_estimate::placeholder {
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+
+.button {
+  display: block;
+  background-color: rgba(241, 99, 177, 0.1);
+  width: 10%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(73, 6, 90);
+  transition: 0.5s;
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
+}
+
+.button:hover {
+  border: 2px solid #000;
+}
+
+.form-filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.island__input_search {
+  background-color: rgba(184, 99, 241, 0.1);
+  width: 60%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(73, 6, 90);
+}
+
+.island__input_search::placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.521);
+  font-style: italic;
+  font-family: 'Noticia Text', serif;
+  padding-left: 10px;
+
+}
+
+.form-sort {
+  background-color: rgba(184, 99, 241, 0.1);
+  width: 35%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(73, 6, 90);
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
+  padding-left: 5px;
+  color: grey;
+}
+
+
+.island__list {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.island__item {
+  order: 1;
+}
+
+.island__item_checked {
+
+  order: 2;
+}
+
+.island__item_checked label {
+  text-decoration: line-through
+}
+
+.form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-check_primary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted rgb(68, 68, 68);
+}
+
+
+.form-check_primary_item{
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.form-check_secondory{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.form-check-input {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.form-edit {
+  display: none;
+
+}
+
+.island__item_edit .form-edit {
+  display: flex;
+  width: 100%;
+
+}
+
+.island__item_edit label {
+  display: none;
+  width: 20%;
+}
+
+.island__item_edit .button_edit {
+  display: none;
+}
+
+.island__input_edit{
+  width: 50%;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border: 1px solid rgba(191, 164, 241, 0.575);
+
+}
+
+.btn-remove {
+  width: 30px;
+  height: 30px;
+  background:rgb(0, 255, 115);
+  background-color: rgba(255, 192, 203, 0.3);
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+
+.button_edit {
+  width: 30px;
+  height: 30px;
+  background:rgb(21, 18, 194);
+  background-color: rgba(241, 99, 177, 0.3);
+  border-radius: 5px;
+  border: none;
+}
+
+.button-save {
+  width: 30px;
+  height: 30px;
+  background:rgb(255, 0, 191);
+  background-color: rgba(144, 238, 214, 0.3);
+  border-radius: 5px;
+  border: none;
+}
+
+.star{
+  font-size: 30px;
+
+  margin-right: 10px;
+}
+
+.star img{
+  height: 20px;
+}
+

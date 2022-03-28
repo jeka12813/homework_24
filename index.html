@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+  </head>
+  <body>
+    <!-- <h1 class="title">Template webpack</h1> -->
+    <div class="container">
+      <div class="island">
+          <div class="island__item">
+              <h1>Сreate your to-do list</h1>
+              <form action="" class="form-create" id="formCreate">
+
+                  <input type="text" name="title" class="island__input" placeholder="Введите название заголовка...">
+                  <div class="island__item_secondory">
+                      <select name="priority" data-id="${id}" class="form-select">
+                          <option value="none" hidden>Выбери приоритет</option>
+                          <option value="">Нет приоритета</option>
+                          <option value="1">☆</option>
+                          <option value="2">☆☆</option>
+                          <option value="3">☆☆☆</option>
+                      </select>
+
+                      <input type="number" name="estimate" placeholder="Оценка" class="input_estimate">
+
+
+                      <button type="submit" class="button">Создать</button>
+                  </div>
+
+              </form>
+          </div>
+
+      </div>
+      <div class="island">
+          <div class="island__item">
+              <div class="form-filter">
+                  <input type="text" id="search" class="island__input_search" placeholder="Поиск по заголовку...">
+                  <select id="sort" class="form-sort">
+                      <option value="none" hidden>Выбери способ сортировки</option>
+                      <option value="">Нет сортировки</option>
+                      <option value="priority">Сортировать по приоритету</option>
+                      <option value="estimate">Сортировать по оценке</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="island__list" id="list">
+          <div>Cписок пуст</div>
+      </div>
+
+  </div>
+
+
+
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
